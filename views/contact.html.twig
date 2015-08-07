@@ -5,7 +5,33 @@
     </head>
     <body>
         <div class='container'>
+
             <h1>Welcome to your address book!</h1>
+            <p>Enter your new contact:</p>
+
+            <form action='/contacts' method='post'>
+                <div class='form-group'>
+                    <label for='name'>Enter the contacts name:</label>
+                    <input id='name' name='name' class='form-control' type='text'>
+                </div>
+                <div class='form-group'>
+                    <label for='phoneNumber'>Enter the contacts phone number:</label>
+                    <input id='phoneNumber' name='phoneNumber' class='form-control' type='text'>
+                </div>
+                <div class='form-group'>
+                    <label for='address'>Enter the contacts address:</label>
+                    <input id='address' name='address' class='form-control' type='text'>
+                </div>
+                <button type='submit' class='btn-success btn-info'>Add contact</button>
+            </form>
+
+
+            {%if contacts is not empty %}
+            <form action='/delete_contact' method='post'>
+                <button type='submit' class='btn-warning btn-info'>Delete contact list</button>
+            <form>
+            {% endif %}
+
 
             {% if contacts is not empty %}
                 <p>Here is a list of your contacts:</p>
@@ -18,15 +44,9 @@
                 </ul>
             {% endif %}
 
-        <form action='/contacts'>
-            <button type='submit' class='btn-success btn-info'>Add a new contact</button>
-        </form>
 
-        {%if contacts is not empty %}
-        <form action='delete_cd' method='post'>
-            <button type='submit' class='btn-warning btn-info'>Delete contact list</button>
-        <form>
-        {% endif %}
+
+
 
         </div>
     </body>
