@@ -4,12 +4,15 @@ class Contact {
     private $phoneNumber;
     private $address;
 
+//start constructor
+
     function __construct($name, $phoneNumber, $address) {
         $this->name = $name;
         $this->phoneNumber = $phoneNumber;
         $this->address = $address;
     }
 
+//end constructor
 //start setters and getters
 
     function setName ($contactName) {
@@ -37,7 +40,6 @@ class Contact {
     }
 
 //end setters and getters
-
 //start save, getAll, and delete methods
 
     function save() {

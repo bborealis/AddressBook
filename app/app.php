@@ -18,11 +18,6 @@
         return $app['twig']->render('contact.html.twig', array('contacts' => Contact::getAll()));
     });
 
-// this might not be necasary?
-//    $app->get("/create_contact", function() use ($app) {
-//        return $app['twig']->render('new_contact.html.twig');
-//    });
-
     $app->post("/contacts", function() use ($app) {
         $contact = new Contact($_POST['name'], $_POST['phoneNumber'], $_POST['address']);
         $contact->save();

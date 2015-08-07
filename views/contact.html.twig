@@ -27,13 +27,10 @@
 
 
             {%if contacts is not empty %}
-            <form action='/delete_contacts' method='post'>
-                <button type='submit' class='btn-warning btn-info'>Delete contact list</button>
-            <form>
-            {% endif %}
+                <form action='/delete_contacts' method='post'>
+                    <button type='submit' class='btn-warning btn-info'>Delete contact list</button>
+                </form>
 
-
-            {% if contacts is not empty %}
                 <p>Here is a list of your contacts:</p>
                 <ul>
                     {% for contact in contacts %}
@@ -43,10 +40,6 @@
                     {% endfor %}
                 </ul>
             {% endif %}
-
-
-
-
 
         </div>
     </body>
