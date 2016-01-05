@@ -1,12 +1,12 @@
-# _{Address Book}_
+# _Address Book_
 
-##### _{A address book application that allows contacts to be added and contacts to be deleted}, {8-7-15}_
+##### _A address book application that allows contacts to be added and contacts to be deleted, 8-7-15_
 
-#### By _**{Brian Borealis}**_
+#### By _**Brian Borealis**_
 
 ## Description
 
-_{Users are able to enter in a contacts name, phone number, and address. Users can add as many contacts as they like. Users are also able to delete the whole address book.}_
+_Users are able to enter in a contacts name, phone number, and address. Users can add as many contacts as they like. Users are also able to delete the whole address book._
 
 ## Setup
 
@@ -16,12 +16,12 @@ _{Users are able to enter in a contacts name, phone number, and address. Users c
 
 ## Technologies Used
 
-_{App created using PHP with Silex and Twig.}_
+_App created using PHP with Silex and Twig._
 
 ### Legal
 
 
-Copyright (c) 2015 **_{Brian Borealis}_**
+Copyright (c) 2015 Brian Borealis
 
 This software is licensed under the MIT license.
 
